@@ -1,0 +1,80 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.tech{
+    @include silver-border;
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    
+    ul{
+        display:grid;
+        grid-template-columns:repeat(5, 1fr);
+        gap:1rem;
+        text-align: center;
+        align-content: center;
+    }
+    i{
+        filter:$svg-silver;
+    }
+}
+.social-links{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    text-align:center;
+    background-color:$black;
+}
+
+.projects{
+    ul{
+        display:flex;
+        justify-content: space-evenly;
+        filter:$svg-gold;
+    }
+}
+
+.project-links{
+    display:flex;
+    justify-content: space-evenly;
+    
+    a{
+        color:$blue;
+        text-transform: uppercase;
+    }
+    i{
+        padding:0 5px;
+    }
+}
+
+.project-card{
+    @include silver-border;
+    height: 20vh;
+}
+
+.contact{
+    h2{
+        @include silver-border;
+        @include uppercase-silver;
+        height:20vh;
+        font-size: 2rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.input-name, .input-email{
+    width:100%;
+    height:2rem;
+    margin:10px auto;
+}
+
+.input-message{
+    width:100%;
+    height:6rem;
+    margin:10px auto;
+}
+
+button{
+    width:100%;
+    height:2rem;
+}

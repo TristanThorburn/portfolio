@@ -1,0 +1,10 @@
+@use "./sass/setup";
+@use "./sass/general";
+@use "./sass/header";
+@use "./sass/body";
+@use "./sass/footer";
+
+html{
+    font-size:125%;
+    overflow-x: hidden;
+}

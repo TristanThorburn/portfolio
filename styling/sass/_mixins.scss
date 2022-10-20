@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+@mixin uppercase-silver{
+    color:$silver;
+    font-family:$font-family;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin uppercase-gold{
+    color:$gold;
+    font-family:$font-family;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin silver-border{
+    border-radius:10%;
+    border: double 5px transparent;
+    background-image: 
+        linear-gradient($black, $black),
+        $silver-gradient;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+@mixin gold-border{
+    border-radius:10%;
+    border: double 5px transparent;
+    background-image: 
+        linear-gradient($black, $black),
+        $gold-gradient;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}

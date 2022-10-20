@@ -1,0 +1,18 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+footer{
+    background-color:$black;
+
+    p{
+        @include uppercase-silver;
+    }
+}
+
+hr{
+    color:$silver;
+    font-family:$logo-font;
+    font-weight:700;
+    background-color:$silver;
+    height: 5px;
+}
