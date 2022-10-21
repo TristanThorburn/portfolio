@@ -1,0 +1,73 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media (min-width:768px){
+
+
+    .desktop-nav{
+        @include flex-c-c;
+
+        ul{
+            gap:3rem;
+        }
+        a{
+            font-size:2rem;
+        }
+    }
+
+    h1{
+        .T{
+            font-size:14rem;
+        }
+        .ristan{
+            font-size:6rem;
+        }
+    }
+
+    .ristan:hover:after{
+        left:40px;
+    }
+    .ristan:focus:after{
+        left:40px;
+    }
+
+    .tech{
+        ul{
+            row-gap: 3rem;
+        }
+        i{
+            font-size:5rem;
+        }
+        img{
+            width:5rem;
+        }
+    }
+
+    .tech-text{
+        ul{
+            font-size:2rem;
+            row-gap:2rem;
+        }
+    }
+
+}
+
+@media (min-width:1024px){
+    .mobile-nav{
+        display:none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

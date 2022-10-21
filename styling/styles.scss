@@ -4,7 +4,7 @@
 @use "./sass/body";
 @use "./sass/footer";
 
-@use "./sass/variables" as *;
+@use "./sass/tablet-media";
 
 html{
     font-size:125%;
