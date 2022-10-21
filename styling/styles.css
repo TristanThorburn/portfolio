@@ -434,13 +434,7 @@ h1 .ristan {
   background-color: #000000;
 }
 
-.projects ul {
-  display: flex;
-  justify-content: space-evenly;
-  filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
-}
-
-.collection {
+h2.collection {
   border-radius: 10%;
   border: double 5px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
@@ -450,6 +444,30 @@ h1 .ristan {
   justify-content: center;
   align-items: center;
   height: 61.804697157vw;
+}
+
+.projects ul {
+  display: flex;
+  justify-content: space-evenly;
+  filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
+}
+
+.project-card {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  height: 61.804697157vw;
+  width: 100vw;
+  position: relative;
+}
+.project-card:hover, .project-card :focus {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .project-links {
@@ -464,20 +482,10 @@ h1 .ristan {
   padding: 0 5px;
 }
 
-.project-card {
-  border-radius: 10%;
-  border: double 5px transparent;
-  background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  height: 61.804697157vw;
-}
-.project-card:hover, .project-card :focus {
-  border-radius: 10%;
-  border: double 5px transparent;
-  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+.description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
 }
 
 .contact h2 {

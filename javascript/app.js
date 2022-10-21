@@ -1,3 +1,30 @@
+// Project Accordion
+const projects = {}
+
+projects.container = document.querySelectorAll(".project-container");
+
+projects.accordion = () => {
+    projects.container.forEach(project =>{
+        project.addEventListener("click", (e) => {
+            project.classList.toggle("active")
+            console.log(e.target);
+            
+            const projectDetails = e.target.parentNode.parentElement.nextElementSibling;
+            if(e.target.parentNode.parentElement.classList.contains("active")){
+                projectDetails.style.maxHeight = projectDetails.scrollHeight + "px";
+            }
+            else{
+                projectDetails.style.maxHeight = 0;
+            }
+        });
+    });
+};
+
+projects.init = () => {
+    projects.accordion();
+};
+
+projects.init();
 // Tech section slider
 const tech = {};
 

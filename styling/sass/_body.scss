@@ -46,11 +46,18 @@
         }
     }
 }
+
 .social-links{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     text-align:center;
     background-color:$black;
+}
+
+h2.collection{
+    @include gold-border;
+    @include flex-c-c;
+    height:$business-card;
 }
 
 .projects{
@@ -61,11 +68,17 @@
     }
 }
 
-.collection{
-    @include gold-border;
-    @include flex-c-c;
+.project-card{
+    @include silver-border;
     height:$business-card;
+    width:100vw;
+    position:relative;
+
+    &:hover, :focus{
+        @include gold-border;
+    }
 }
+
 .project-links{
     display:flex;
     justify-content: space-evenly;
@@ -79,13 +92,10 @@
     }
 }
 
-.project-card{
-    @include silver-border;
-    height:$business-card;
-
-    &:hover, :focus{
-        @include gold-border;
-    }
+.description{
+    max-height:0;
+    overflow: hidden;
+    transition:max-height 1s ease-out;
 }
 
 .contact{
