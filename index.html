@@ -48,8 +48,8 @@
                 </ul>
             </nav>
         </div>
-        <div id="home" class="home">
-            <h1><span class="T">T</span><span class="ristan">ristan</span></h1>
+        <div id="home" class="home" tabindex="0">
+            <h1><span class="T">T</span><span class="ristan"></span></h1>
         </div>
     </header>
     <main>
@@ -69,24 +69,42 @@
                 </div>
             </div>   
         </section>
-        <section class="tech">
-            <ul>
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-brands fa-sass"></i></li>
-                <li><i class="fa-brands fa-square-js"></i></li>
-                <li><i class="fa-brands fa-react"></i></li>
-                <li><img src="./assets/firebase-icon.svg"></li>
-                <li><img src="./assets/accessibility-icon.svg"></li>
-                <li><img src="./assets/jQuery-icon.svg"></li>
-                <li><img src="./assets/responsive-icon.svg"></li>
-                <li><img src="./assets/vscode-icon.svg"></li>
-            </ul>
+        <section tabindex="0" class="tech-icons">
+            <div class="tech">
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-sass"></i></li>
+                    <li><i class="fa-brands fa-square-js"></i></li>
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><img src="./assets/firebase-icon.svg"></li>
+                    <li><img src="./assets/accessibility-icon.svg"></li>
+                    <li><img src="./assets/jQuery-icon.svg"></li>
+                    <li><img src="./assets/responsive-icon.svg"></li>
+                    <li><img src="./assets/vscode-icon.svg"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="is-hidden tech-info">
+            <div class="tech-text">
+                <ul>
+                    <li>Html5</li>
+                    <li>Css3</li>
+                    <li>Sass</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Firebase</li>
+                    <li>Accessibility</li>
+                    <li>jQuery</li>
+                    <li>Responsive design</li>
+                    <li>Vs code</li>
+                </ul>
+            </div>
         </section>
         <section id="projects" class="projects"><!--Mobile Business Card Carousel-->
-            <h2>Project Collection</h2>
+            <h2 class="collection">Project Collection Below</h2>
             <div><!--PROJECT 1********************************************************************-->
-                <div><!--Project Image-->
+                <div>
                     <div class="project-card">
                         <img src="./assets/js-sommelier.png" alt="">
                     </div>
@@ -111,7 +129,7 @@
                 </div>
             </div>
             <div><!--PROJECT 2***********************************************************************-->
-                <div><!--Project Image-->
+                <div>
                     <div class="project-card">
                         <img src="./assets/under-the-sea.png" alt="">
                     </div>
@@ -122,7 +140,6 @@
                             <i class="fa-solid fa-code"></i></i>Repo</a></p>
                     </div>
                 </div>
-                <!--Project 2-->
                 <div class="wrapper">
                     <h3>Under the sea</h3>
                     <p>Project About</p>
@@ -138,7 +155,7 @@
                 </div>
             </div>
             <div><!--PROJECT 3***********************************************************************-->
-                <div><!--Project Image-->
+                <div>
                     <div class="project-card">
                         <img src="./assets/one-magazine.png" alt="">
                     </div>
@@ -149,7 +166,6 @@
                             <i class="fa-solid fa-code"></i></i>Repo</a></p>
                     </div>
                 </div>
-                <!--Project 3-->
                 <div class="wrapper">
                     <h3>One Magazine</h3>
                     <p>Project About</p>
@@ -162,7 +178,7 @@
                 </div>
             </div>
             <div><!--PROJECT 4*********************************************************************-->
-                <div><!--Project Image-->
+                <div>
                     <div class="project-card">
                         <img src="./assets/spaces.png" alt="">
                     </div>
@@ -173,7 +189,6 @@
                             <i class="fa-solid fa-code"></i></i>Repo</a></p>
                     </div>
                 </div>
-                <!--Project 4-->
                 <div class="wrapper">
                     <h3>Spaces</h3>
                     <p>Project About</p>
@@ -186,7 +201,7 @@
                 </div>
             </div>
             <div><!--PROJECT EASTER EGG***********************************************************-->
-                <div><!--Project Image-->
+                <div>
                     <div class="project-card">
                         <img src="./assets/easter-egg-project.png" alt="">
                     </div>
@@ -197,7 +212,6 @@
                             <i class="fa-solid fa-code"></i></i>Repo</a></p>
                     </div>
                 </div>
-                <!--Easter Egg Project-->
                 <div class="wrapper">
                     <h3>3 Day old developer</h3>
                     <p>Project About</p>
@@ -210,7 +224,10 @@
         </section>
         <section id="contact" class="contact"><!--Contact Form-->
             <h2><span>Contact Me</span></h2>
-            <form action="" class="wrapper">
+            <form 
+                action="https://formsubmit.co/tristanthorburn@gmail.com" 
+                method="POST" 
+                class="wrapper"/>
                 <div>
                     <label for="name" class="sr-only">Name</label>
                     <input 

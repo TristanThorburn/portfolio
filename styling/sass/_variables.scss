@@ -10,10 +10,9 @@ $svg-gold:invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%
 
 $silver-gradient:linear-gradient(to top, #686868, #c0bfc3, #686868);
 $gold-gradient:linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
-// FONT-WEIGHTS
-
 // FONT FAMILIES
 $logo-font:'Oswald', sans-serif;
 $font-family:'Be Vietnam Pro', sans-serif;
-// FONT SIZING
+// SIZING
+$business-card:calc(100vw / 1.618);
 

@@ -315,7 +315,7 @@ ul {
 }
 
 .home {
-  height: 20vh;
+  height: 61.804697157vw;
 }
 
 h1 {
@@ -337,7 +337,7 @@ h1 .T {
   font-size: 7rem;
   font-weight: 700;
   position: absolute;
-  bottom: -5%;
+  bottom: -4%;
   left: 50%;
   transform: translateX(-180%);
 }
@@ -349,15 +349,40 @@ h1 .ristan {
   transform: translateX(-38%);
 }
 
+.ristan:after {
+  position: relative;
+  content: "ristan";
+}
+
+.ristan:hover:after {
+  content: "horburn";
+  left: 20px;
+}
+
+.ristan:focus:after {
+  content: "horburn";
+  left: 20px;
+}
+
 .tech {
   border-radius: 10%;
   border: double 5px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  height: 20vh;
+  height: 61.804697157vw;
   display: flex;
   justify-content: center;
+}
+.tech:hover, .tech :focus {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.tech:hover i, .tech:hover img, .tech :focus i, .tech :focus img {
+  filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
 }
 .tech ul {
   display: grid;
@@ -368,6 +393,38 @@ h1 .ristan {
 }
 .tech i {
   filter: invert(93%) sepia(4%) saturate(10%) hue-rotate(321deg) brightness(85%) contrast(86%);
+}
+
+.tech-text {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61.804697157vw;
+}
+.tech-text ul {
+  color: #C0C0C0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+.tech-text:hover, .tech-text :focus {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.tech-text:hover ul, .tech-text :focus ul {
+  color: #c5b358;
 }
 
 .social-links {
@@ -381,6 +438,18 @@ h1 .ristan {
   display: flex;
   justify-content: space-evenly;
   filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
+}
+
+.collection {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61.804697157vw;
 }
 
 .project-links {
@@ -401,7 +470,14 @@ h1 .ristan {
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  height: 20vh;
+  height: 61.804697157vw;
+}
+.project-card:hover, .project-card :focus {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .contact h2 {
@@ -414,11 +490,22 @@ h1 .ristan {
   font-family: "Be Vietnam Pro", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  height: 20vh;
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 61.804697157vw;
+  font-size: 2rem;
+}
+.contact h2:hover, .contact h2:focus {
+  border-radius: 10%;
+  border: double 5px transparent;
+  background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  color: #c5b358;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .input-name, .input-email {

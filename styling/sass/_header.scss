@@ -37,7 +37,7 @@ ul{
 }
 
 .home{
-    height:20vh;
+    height:calc(100vw / 1.618);
 }
 
 h1{
@@ -55,7 +55,7 @@ h1{
         font-size:7rem;
         font-weight:700;
         position:absolute;
-        bottom:-5%;
+        bottom:-4%;
         left:50%;
         transform:translateX(-180%)
     }
@@ -64,6 +64,18 @@ h1{
         font-weight:400;
         bottom:0%;
         left:50%;
-        transform:translateX(-38%)
+        transform:translateX(-38%);
     }
+}
+.ristan:after{
+    position:relative;
+    content:"ristan";
+}
+.ristan:hover:after{
+    content:"horburn";
+    left:20px;
+}
+.ristan:focus:after{
+    content:"horburn";
+    left:20px;
 }
