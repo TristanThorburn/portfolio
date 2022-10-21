@@ -6,6 +6,7 @@
     height:$business-card;
     display:flex;
     justify-content: center;
+    cursor: pointer;
     
     &:hover, :focus{
         @include gold-border;
@@ -30,12 +31,13 @@
     @include silver-border;
     @include flex-c-c;
     height:$business-card;
+    cursor: pointer;
 
     ul{
         @include uppercase-silver;
         display:grid;
         grid-template-columns:1fr 1fr;
-        gap:1rem;
+        gap:0.5rem;
         text-align: center;
     }
     &:hover, :focus{
@@ -71,11 +73,12 @@ h2.collection{
 .project-card{
     @include silver-border;
     height:$business-card;
-    width:100vw;
+    margin-bottom:20px;
     position:relative;
 
     &:hover, :focus{
         @include gold-border;
+        cursor: pointer;
     }
 }
 
@@ -92,13 +95,15 @@ h2.collection{
     }
 }
 
-.description{
+.description, .eggy{
     max-height:0;
     overflow: hidden;
     transition:max-height 1s ease-out;
 }
 
 .contact{
+    margin-top:-30px;
+
     h2{
         @include silver-border;
         @include uppercase-silver;
@@ -109,16 +114,25 @@ h2.collection{
     h2:hover, h2:focus{
         @include gold-border;
         @include uppercase-gold;
+        cursor: pointer;
     }
 }
 
+form{
+    max-height:0;
+    overflow: hidden;
+    transition:max-height 1s ease-out;
+}
+
 .input-name, .input-email{
+    @include text-fam-upp-cent;
     width:100%;
     height:2rem;
     margin:10px auto;
 }
 
 .input-message{
+    @include text-fam-upp-cent;
     width:100%;
     height:6rem;
     margin:10px auto;
@@ -127,4 +141,18 @@ h2.collection{
 button{
     width:100%;
     height:2rem;
+    @include text-fam-upp-cent;
+    color:$silver;
+    background:$black;
+    border:3px solid $silver;
+    cursor: pointer;
+
+    &:hover, :focus{
+        background-color:lighten($black, 25%)
+    }
+    &:active{
+        background:$silver;
+        color:$black;
+        border:3px solid $black;
+    }
 }

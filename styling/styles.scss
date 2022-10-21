@@ -4,6 +4,8 @@
 @use "./sass/body";
 @use "./sass/footer";
 
+@use "./sass/variables" as *;
+
 html{
     font-size:125%;
     overflow-x: hidden;

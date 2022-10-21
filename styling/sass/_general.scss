@@ -1,7 +1,7 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-.is-hidden{
+.is-hidden, .mobile-hidden{
     display:none;
 }
 

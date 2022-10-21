@@ -17,7 +17,27 @@
 
 .desktop-nav{
     position:fixed;
-    left:-100%;
+    z-index: 10;
+    @include gold-border;
+    width:100vw;
+    height:$business-card;
+    right:-100%;
+    transition:all 1s;
+
+    ul{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:1rem;
+        text-align: center;
+        margin:30px, 0;
+    }
+    a{
+        @include uppercase-gold;
+    }
+}
+
+.desktop-nav.active{
+    right:0%;
 }
 
 ul{
@@ -34,6 +54,11 @@ ul{
     padding:0%;
     margin-top:-3px;
     font-family:$logo-font;
+    transition:all 1s;
+}
+
+.hamburger.active{
+    transform:rotateY(180deg);
 }
 
 .home{
@@ -55,7 +80,7 @@ h1{
         font-size:7rem;
         font-weight:700;
         position:absolute;
-        bottom:-4%;
+        bottom:-6%;
         left:50%;
         transform:translateX(-180%)
     }
