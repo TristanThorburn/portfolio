@@ -140,4 +140,3 @@ contact.init = () => {
 }
 
 contact.init();
-

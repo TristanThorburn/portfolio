@@ -50,24 +50,49 @@
         }
     }
 
+    h2.collection{
+        font-size:3rem;
+    }
+
 }
 
 @media (min-width:1024px){
+
+    .mobile-hidden{
+        display:block;
+    }
     .mobile-nav{
         display:none;
     }
 
+    .desktop-nav{
+        position:static;
+        height:auto;
+        
+        ul{
+            grid-template-columns:repeat(7, 1fr);
+            gap:2rem;
+            align-items: center;
+        }
+        a{
+            font-size:1rem;
+        }
+    }
 
+    h1{
+        margin-top:0;
 
+        .T{
+            bottom:-3.5%;
+        }
+    }
+    .social-links{
+        background-color:$white;
 
-
-
-
-
-
-
-
-
-
-
+        .fa-github{
+            background-color:$black;
+            border:2px solid $black;
+            border-radius:50%;
+        }
+    }
 }

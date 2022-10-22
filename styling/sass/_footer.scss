@@ -14,13 +14,16 @@ footer{
     background-color:$black;
     font-family:$logo-font;
     transition: all 1s;
+    margin:0;
+    transform:rotateX(180deg);
 
+    
     &:hover, :focus{
         cursor: help;
     }
     }
     .secret.active{
-    transform:rotateX(180deg);
+    transform:rotateX(0deg);
     }
 }
 
@@ -30,5 +33,6 @@ hr{
     font-weight:700;
     background-color:$silver;
     height: 5px;
+    margin:0;
 }
 
