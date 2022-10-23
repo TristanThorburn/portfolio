@@ -221,7 +221,7 @@ html {
   overflow: hidden;
 }
 
-.is-hidden, .mobile-hidden {
+.is-hidden, .mobile-hidden, .carousel-off {
   display: none;
 }
 
@@ -819,6 +819,12 @@ hr {
     grid-column: 2;
     position: relative;
     overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+  }
+  .carousel-off {
+    display: block;
   }
   .slide-left {
     grid-column: 1;

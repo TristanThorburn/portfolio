@@ -68,7 +68,7 @@ projects.container = document.querySelectorAll(".project-container");
 projects.accordion = () => {
     projects.container.forEach(project =>{
     project.addEventListener("click", (e) => {
-        if(window.innerWidth <= 1199){
+        if(window.innerWidth < 1200){
             project.classList.toggle("active")
             
                 const projectDetails = e.target.parentNode.parentElement.nextElementSibling;
@@ -148,39 +148,71 @@ contact.init();
 
 // Project Slider
 
-// const slides = document.querySelectorAll(".slide");
-// let currentSlide = 0;
-// let maxSlide = slides.length -1;
-// const nextSlide = document.querySelector(".slide-right");
-// const prevSlide = document.querySelector(".slide-left");
+const slider = {};
+slider.slide = document.querySelectorAll(".slide");
+slider.currentSlide = 0;
+slider.maxSlide = slider.slide.length -2;
+slider.next = document.querySelector(".slide-right");
+slider.prev = document.querySelector(".slide-left");
 
-// slides.forEach((slide, index) =>{
-//     slide.style.transform = `translateX(${index * 100}%)`;
-// });
+slider.slide.forEach((slide, index) => {
+    if(window.innerWidth >= 1200){
+        slide.style.transform = `translateX(${index * 100}%)`;
+    }
+})
 
-// nextSlide.addEventListener("click", () => {
-//     if(currentSlide === maxSlide){
-//         currentSlide = 0;
-//     }
-//     else{
-//         currentSlide++;
-//     }
+slider.reset = () => {
+    window.onresize = () =>{
+        if(window.innerWidth < 1200){
+            slider.slide.forEach(slide =>{
+                slide.removeAttribute("style");
+            });
+        }
+        else{
+            slider.slide.forEach((slide, index) => {
+                if(window.innerWidth >= 1200){
+                    slide.style.transform = `translateX(${index * 100}%)`;
+                }
+            })
+        }
+    }
+}
 
-//     slides.forEach((slide, index) => {
-//         slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
-//     });
-// });
+slider.right = () => {
+    slider.next.addEventListener("click", () => {
+        if(slider.currentSlide === slider.maxSlide){
+            slider.currentSlide = 0;
+        }
+        else{
+            slider.currentSlide++;
+        }
 
-// prevSlide.addEventListener("click", () => {
-//     if (currentSlide === 0){
-//         currentSlide = maxSlide;
-//     }
-//     else{
-//         currentSlide--;
-//     }
+        slider.slide.forEach((slide, index) => {
+            slide.style.transform = `translateX(${100 * (index - slider.currentSlide)}%)`;
+        })
+    });
+}
 
-//     slides.forEach((slide, index) => {
-//         slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
-//     });
-// });
+slider.left = () => {
+    slider.prev.addEventListener("click", () => {
+        if (slider.currentSlide === 0){
+                slider.currentSlide = slider.maxSlide;
+            }
+            else{
+                slider.currentSlide--;
+            }
+
+        slider.slide.forEach((slide, index) => {
+            slide.style.transform = `translateX(${100 * (index - slider.currentSlide)}%)`;
+        })
+    });
+}
+
+slider.init = () => {
+    slider.reset();
+    slider.right();
+    slider.left();
+};
+slider.init();
+
 

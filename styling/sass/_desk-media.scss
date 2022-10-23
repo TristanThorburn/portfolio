@@ -122,9 +122,12 @@
         position:relative;
         overflow:hidden;
     }
-    // .slide{
-    //     position:absolute;
-    // }
+    .slide{
+        position:absolute;
+    }
+    .carousel-off{
+        display:block;
+    }
     .slide-left{
         grid-column:1;
         grid-row:2;
