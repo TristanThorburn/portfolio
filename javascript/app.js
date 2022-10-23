@@ -63,9 +63,8 @@ tech.init();
 // Project Accordion
 const projects = {};
 
-projects.container = document.querySelectorAll(".project-container");
-
 projects.accordion = () => {
+    projects.container = document.querySelectorAll(".project-container");
     projects.container.forEach(project =>{
     project.addEventListener("click", (e) => {
         if(window.innerWidth < 1200){
@@ -93,7 +92,6 @@ projects.init = () => {
 projects.init();
 
 // Eggy
-
 const eggy = {};
 
 eggy.cracked = () => {
@@ -118,6 +116,33 @@ eggy.init = () => {
 }
 
 eggy.init();
+
+// Project Append
+const append = {};
+
+append.show = () => {
+    append.info = document.querySelectorAll(".slide");
+    append.info.forEach(info => {
+        info.addEventListener("click", (e) => {
+            const display = e.target.parentElement.parentElement.nextElementSibling;
+            const clone = display.cloneNode(true);
+            const outPut = document.querySelector(".desktop-description");
+            if(outPut.childNodes.length > 0){
+                outPut.innerHTML = "";
+            }
+            else if(window.innerWidth >=1200){
+                outPut.appendChild(clone);
+                clone.classList.remove("description");
+            }           
+        })
+    })
+}
+
+append.init = () => {
+    append.show();
+}
+
+append.init();
 
 // Contact Accordion
 const contact = {};
