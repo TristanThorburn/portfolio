@@ -54,13 +54,20 @@
                 </ul>
             </nav>
         </div>
-        <div id="home" class="home" tabindex="0">
-            <h1><span class="T">T</span><span class="ristan"></span></h1>
+        <div class="desk-header">
+            <div id="home" class="home" tabindex="0">
+                <h1>
+                    <span class="T">T</span>
+                    <span class="ristan"></span>
+                </h1>
+            </div>
+            <h2 class="mobile-hidden">Front-End</h2>
+            <h3 class="mobile-hidden">Web Developer</h3>
         </div>
     </header>
     <main>
-        <section id="about" class="wrapper about">
-            <h2>Thanks for checking out my Portfolio</h2>
+        <section class="wrapper about">
+            <h2 id="about">Thanks for checking out my Portfolio</h2>
             <p>I am a front end developer who enjoys the challenge of translating the ideas and design of a project to a working and accessible site. I studied with Juno College in order to make the industry change from hospitality, where I worked for the last 12 years.</p>
             <div class="mobile-hidden">
                 <div class="social-links">
@@ -88,7 +95,7 @@
                     <li><i class="fa-brands fa-react"></i></li>
                     <li><img src="./assets/firebase-icon.svg"></li>
                     <li><img src="./assets/accessibility-icon.svg"></li>
-                    <li><img src="./assets/jQuery-icon.svg"></li>
+                    <li><img src="./assets/rest-api-icon.svg"></li>
                     <li><img src="./assets/responsive-icon.svg"></li>
                     <li><img src="./assets/vscode-icon.svg"></li>
                 </ul>
@@ -104,129 +111,132 @@
                     <li>React</li>
                     <li>Firebase</li>
                     <li>Accessibility</li>
-                    <li>jQuery</li>
+                    <li>Rest Api</li>
                     <li>Responsive design</li>
                     <li>Vs code</li>
                 </ul>
             </div>
         </section>
         <section id="projects" class="projects">
-            <h2 class="collection" tabindex="0">Project Collection Below</h2>
-            <div><!--PROJECT 1**************************************************************************-->
-                <div class = "project-container" tabindex="0">
-                    <div class="project-card">
-                        <img src="./assets/js-sommelier.png" alt="Javascript Sommelier project image, click for details">
+            <h2 class="collection" tabindex="0">Project Collection</h2>
+            <button class="slide-left"><</button>
+            <div class="project-slider">
+                <div class="slide"><!--PROJECT 1-->
+                    <div class = "project-container" tabindex="0">
+                        <div class="project-card">
+                            <img src="./assets/js-sommelier.png" alt="Javascript Sommelier project image, click for details">
+                        </div>
                     </div>
-                </div>
-                <div class="wrapper description">
-                    <div class="project-links">
-                        <p><a href="https://darling-malasada-522ed5.netlify.app/">
-                            <i class="fa-solid fa-laptop"></i>Live</a></p>
-                        <p><a href="https://github.com/Juno-group-proj-two/paul-matt-trist-proj-2">
-                            <i class="fa-solid fa-code"></i></i>Repo</a></p>
-                    </div>
-                    <h3>Javascript Sommelier</h3>
-                    <p>Project Partners: 
-                        <a href="https://github.com/myboyblue519">Mattew Van Luxemborg</a>&nbspand 
-                        <a href="https://github.com/PPableo">Paul Pableo</a></p>
-                    <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
-                    <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-sass"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                    </ul>
-                    <p>Tech used / Difficulties / Solutions (Desktop)</p>
-                </div>
-            </div>
-            <div><!--PROJECT 2***********************************************************************-->
-                <div class = "project-container" tabindex="0">
-                    <div class="project-card">
-                        <img src="./assets/under-the-sea.png" alt="Under the Sea project image, click for details">
-                    </div>
-                </div>
-                <div class="wrapper description">
-                    <div class="project-links">
-                        <p><a href="https://zesty-moonbeam-ee59a1.netlify.app/">
-                            <i class="fa-solid fa-laptop"></i>Live</a></p>
-                        <p><a href="https://github.com/TristanThorburn/project-one/tree/my-feature-branch">
-                            <i class="fa-solid fa-code"></i></i>Repo</a></p>
-                    </div>
-                    <h3>Under the sea</h3>
-                    <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
-                    <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><i class="fa-brands fa-sass"></i></li>
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><img src="./assets/accessibility-icon.svg"></li>
-                        <li><img src="./assets/responsive-icon.svg"></li>
-                    </ul>
-                    <p>Tech used / Difficulties / Solutions (Desktop)</p>
-                </div>
-            </div>
-            <div><!--PROJECT 3***********************************************************************-->
-                <div class = "project-container" tabindex="0">
-                    <div class="project-card">
-                        <img src="./assets/one-magazine.png" alt="One Magazine project image, click for details">
-                    </div>
-                </div>
-                <div class="wrapper description">
-                    <div class="project-links">
-                        <p><a href="https://tubular-boba-56667e.netlify.app/">
-                            <i class="fa-solid fa-laptop"></i>Live</a></p>
-                        <p><a href="https://github.com/TristanThorburn/tristan-week-one-assignment-one">
-                            <i class="fa-solid fa-code"></i></i>Repo</a></p>
-                    </div>
-                    <h3>One Magazine</h3>
-                    <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
-                    <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><img src="./assets/vscode-icon.svg"></li>
-                    </ul>
-                    <p>Tech used / Difficulties / Solutions (Desktop)</p>
-                </div>
-            </div>
-            <div><!--PROJECT 4*********************************************************************-->
-                <div class = "project-container" tabindex="0">
-                    <div class="project-card">
-                        <img src="./assets/spaces.png" alt="Spaces project image, click for details">
-                    </div>
-                </div>
-                <div class="wrapper description">
-                    <div class="project-links">
-                        <p><a href="https://joyful-entremet-75e854.netlify.app/">
-                            <i class="fa-solid fa-laptop"></i>Live</a></p>
-                        <p><a href="https://github.com/TristanThorburn/TristanThorburn-web-dev-final-project">
-                            <i class="fa-solid fa-code"></i></i>Repo</a></p>
-                    </div>
-                    <h3>Spaces</h3>
-                    <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
-                    <ul>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3-alt"></i></li>
-                        <li><img src="./assets/vscode-icon.svg"></li>
-                    </ul>
-                    <p>Tech used / Difficulties / Solutions (Desktop)</p>
-                </div>
-            </div>
-            <div class="eggy">
-                <div tabindex="0">
-                    <img src="./assets/easter-egg-project.png" alt="3 Day old developer project image, click for details">
-                </div>
-                <div class="wrapper">
-                    <div class="project-links">
-                        <p><a href="https://fabulous-sunflower-130abe.netlify.app/">
+                    <div class="wrapper description">
+                        <div class="project-links">
+                            <p><a href="https://darling-malasada-522ed5.netlify.app/">
                                 <i class="fa-solid fa-laptop"></i>Live</a></p>
-                        <p><a href="https://github.com/TristanThorburn/3-days-of-intro-to-web-dev">
+                            <p><a href="https://github.com/Juno-group-proj-two/paul-matt-trist-proj-2">
                                 <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                        </div>
+                        <h3>Javascript Sommelier</h3>
+                        <p>Project Partners: 
+                            <a href="https://github.com/myboyblue519">Mattew Van Luxemborg</a>&nbspand 
+                            <a href="https://github.com/PPableo">Paul Pableo</a></p>
+                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-sass"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                        </ul>
+                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
                     </div>
-                    <h3>After 3 days of web dev classes</h3>
-                    <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                </div>
+                <div class="slide"><!--PROJECT 2-->
+                    <div class = "project-container" tabindex="0">
+                        <div class="project-card">
+                            <img src="./assets/under-the-sea.png" alt="Under the Sea project image, click for details">
+                        </div>
+                    </div>
+                    <div class="wrapper description">
+                        <div class="project-links">
+                            <p><a href="https://zesty-moonbeam-ee59a1.netlify.app/">
+                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                            <p><a href="https://github.com/TristanThorburn/project-one/tree/my-feature-branch">
+                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                        </div>
+                        <h3>Under the sea</h3>
+                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-sass"></i></li>
+                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><img src="./assets/accessibility-icon.svg"></li>
+                            <li><img src="./assets/responsive-icon.svg"></li>
+                        </ul>
+                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                    </div>
+                </div>
+                <div class="slide"><!--PROJECT 3-->
+                    <div class = "project-container" tabindex="0">
+                        <div class="project-card">
+                            <img src="./assets/one-magazine.png" alt="One Magazine project image, click for details">
+                        </div>
+                    </div>
+                    <div class="wrapper description">
+                        <div class="project-links">
+                            <p><a href="https://tubular-boba-56667e.netlify.app/">
+                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                            <p><a href="https://github.com/TristanThorburn/tristan-week-one-assignment-one">
+                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                        </div>
+                        <h3>One Magazine</h3>
+                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><img src="./assets/vscode-icon.svg"></li>
+                        </ul>
+                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                    </div>
+                </div>
+                <div class="slide"><!--PROJECT 4-->
+                    <div class = "project-container" tabindex="0">
+                        <div class="project-card">
+                            <img src="./assets/spaces.png" alt="Spaces project image, click for details">
+                        </div>
+                    </div>
+                    <div class="wrapper description">
+                        <div class="project-links">
+                            <p><a href="https://joyful-entremet-75e854.netlify.app/">
+                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                            <p><a href="https://github.com/TristanThorburn/TristanThorburn-web-dev-final-project">
+                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                        </div>
+                        <h3>Spaces</h3>
+                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><img src="./assets/vscode-icon.svg"></li>
+                        </ul>
+                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                    </div>
+                </div>
+                <div class="eggy slide"">
+                    <div tabindex="0">
+                        <img src="./assets/easter-egg-project.png" alt="3 Day old developer project image, click for details">
+                    </div>
+                    <div class="wrapper">
+                        <div class="project-links">
+                            <p><a href="https://fabulous-sunflower-130abe.netlify.app/">
+                                    <i class="fa-solid fa-laptop"></i>Live</a></p>
+                            <p><a href="https://github.com/TristanThorburn/3-days-of-intro-to-web-dev">
+                                    <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                        </div>
+                        <h3>After 3 days of web dev classes</h3>
+                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
                     </div>
                 </div>
             </div>
+            <button class="mobile-hidden slide-right">></button>
         </section>
         <section class="contact">
             <h2 id="contact"><span>Contact Me</span></h2>

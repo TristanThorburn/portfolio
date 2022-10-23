@@ -1,9 +1,9 @@
 // Mobile Hamburger
 const hamburger = {};
 
-hamburger.button = document.querySelector(".hamburger");
-
 hamburger.showMenu = () => {
+    hamburger.button = document.querySelector(".hamburger");
+
     hamburger.button.addEventListener("click", () => {
         const menu = document.querySelector(".desktop-nav");
 
@@ -67,15 +67,20 @@ projects.container = document.querySelectorAll(".project-container");
 
 projects.accordion = () => {
     projects.container.forEach(project =>{
-        project.addEventListener("click", (e) => {
+    project.addEventListener("click", (e) => {
+        if(window.innerWidth <= 1199){
             project.classList.toggle("active")
             
-            const projectDetails = e.target.parentNode.parentElement.nextElementSibling;
-            if(e.target.parentNode.parentElement.classList.contains("active")){
-                projectDetails.style.maxHeight = projectDetails.scrollHeight + "px";
+                const projectDetails = e.target.parentNode.parentElement.nextElementSibling;
+                if(e.target.parentNode.parentElement.classList.contains("active")){
+                    projectDetails.style.maxHeight = projectDetails.scrollHeight + "px";
+                }
+                else{
+                    projectDetails.style.maxHeight = 0;
+                }
             }
             else{
-                projectDetails.style.maxHeight = 0;
+                project.removeEventListener("click", e);
             }
         });
     });
@@ -91,9 +96,9 @@ projects.init();
 
 const eggy = {};
 
-eggy.secret = document.querySelector(".secret");
-
 eggy.cracked = () => {
+    eggy.secret = document.querySelector(".secret");
+
     eggy.secret.addEventListener("dblclick", () => {
         const proj = document.querySelector(".eggy");
         eggy.secret.classList.toggle("active");
@@ -117,9 +122,9 @@ eggy.init();
 // Contact Accordion
 const contact = {};
 
-contact.container = document.querySelector(".contact");
-
 contact.accordion = () => {
+    contact.container = document.querySelector(".contact");
+
     contact.container.addEventListener("click", () => {
         contact.h2 = document.getElementById("contact");
         contact.form = document.querySelector(".contact-form");
@@ -140,3 +145,42 @@ contact.init = () => {
 }
 
 contact.init();
+
+// Project Slider
+
+// const slides = document.querySelectorAll(".slide");
+// let currentSlide = 0;
+// let maxSlide = slides.length -1;
+// const nextSlide = document.querySelector(".slide-right");
+// const prevSlide = document.querySelector(".slide-left");
+
+// slides.forEach((slide, index) =>{
+//     slide.style.transform = `translateX(${index * 100}%)`;
+// });
+
+// nextSlide.addEventListener("click", () => {
+//     if(currentSlide === maxSlide){
+//         currentSlide = 0;
+//     }
+//     else{
+//         currentSlide++;
+//     }
+
+//     slides.forEach((slide, index) => {
+//         slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+//     });
+// });
+
+// prevSlide.addEventListener("click", () => {
+//     if (currentSlide === 0){
+//         currentSlide = maxSlide;
+//     }
+//     else{
+//         currentSlide--;
+//     }
+
+//     slides.forEach((slide, index) => {
+//         slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
+//     });
+// });
+
