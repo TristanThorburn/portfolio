@@ -277,7 +277,7 @@ p {
 
 .mobile-nav {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -296,7 +296,7 @@ p {
   position: fixed;
   z-index: 10;
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -350,7 +350,7 @@ ul {
 
 h1 {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -410,7 +410,7 @@ h1 .ristan {
 
 .tech {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -421,7 +421,7 @@ h1 .ristan {
 }
 .tech:hover, .tech :focus {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -442,7 +442,7 @@ h1 .ristan {
 
 .tech-text {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -464,7 +464,7 @@ h1 .ristan {
 }
 .tech-text:hover, .tech-text :focus {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -475,7 +475,7 @@ h1 .ristan {
 
 h2.collection {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -493,7 +493,7 @@ h2.collection {
 
 .project-card {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -503,7 +503,7 @@ h2.collection {
 }
 .project-card:hover, .project-card :focus {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -533,7 +533,7 @@ h2.collection {
 }
 .contact h2 {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -549,7 +549,7 @@ h2.collection {
 }
 .contact h2:hover, .contact h2:focus {
   border-radius: 25px;
-  border: double 5px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(#000000, #000000), linear-gradient(to bottom, #926F34, #DFBD69, #926F34);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -635,7 +635,7 @@ hr {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   background-color: #c0c0c0;
-  height: 5px;
+  height: 1px;
   margin: 0;
 }
 
@@ -712,8 +712,9 @@ hr {
   }
   .desk-header {
     margin: 0;
-    background: radial-gradient(circle, #1e3b71 0%, hsl(218deg, 58%, 38%) 50%, rgb(30, 59, 112) 100%);
+    background-image: url("../../assets/unsplash-touann-gatouillat-vergos.webp");
     border-radius: 25px;
+    background-size: cover;
     height: 60vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -724,12 +725,17 @@ hr {
     grid-column: span 2;
     font-size: 3rem;
     margin-bottom: 0;
+    margin-left: 20px;
+    color: #FFFFFF;
+    text-align: left;
   }
   .desk-header h3 {
     grid-row: 4;
     grid-column: span 2;
     font-size: 2rem;
     margin-top: 0;
+    margin-left: 20px;
+    text-align: left;
   }
   .home {
     width: 30vw;
@@ -752,21 +758,22 @@ hr {
     left: 20px;
   }
   .about {
-    background: radial-gradient(circle, rgb(174, 195, 233) 0%, rgb(206, 219, 242) 50%, rgb(174, 195, 233) 100%);
-    border-radius: 25px;
-    height: 60vh;
+    margin: 1% auto;
+    min-height: 45vh;
   }
-  .about div {
+  .about .spacing {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  .about .carousel-off {
+    grid-column: 1;
   }
   .about h2 {
     grid-column: 2;
   }
   .about p {
     grid-column: 2;
-    grid-row: 2;
   }
   .about .mobile-hidden {
     grid-column: 1;
@@ -784,7 +791,7 @@ hr {
   .tech, .tech-text {
     width: 30vw;
     height: 18.5414091471vw;
-    transform: translate(233%, -100%);
+    transform: translate(217%, -105%);
   }
   .tech li img, .tech-text li img {
     width: 2rem;
@@ -800,11 +807,12 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 3fr;
-    gap: 3rem;
-    margin: 1px auto;
-    height: 60vh;
-    background: radial-gradient(circle, #1e3b71 0%, hsl(218deg, 58%, 38%) 50%, rgb(30, 59, 112) 100%);
+    gap: 1rem;
+    margin-top: 2%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../../assets/817-bar.webp");
+    background-size: cover;
     border-radius: 25px;
+    min-height: 40vh;
   }
   .projects .project-card {
     width: 30vw;
@@ -833,7 +841,7 @@ hr {
   }
   .slide-left {
     border-radius: 25px;
-    border: double 1px transparent;
+    border: double 0.5px transparent;
     background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -845,7 +853,7 @@ hr {
   }
   .slide-left:hover, .slide-left :focus {
     border-radius: 25px;
-    border: double 1px transparent;
+    border: double 0.5px transparent;
     background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -853,7 +861,7 @@ hr {
   }
   .slide-right {
     border-radius: 25px;
-    border: double 1px transparent;
+    border: double 0.5px transparent;
     background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -865,25 +873,28 @@ hr {
   }
   .slide-right:hover, .slide-right :focus {
     border-radius: 25px;
-    border: double 1px transparent;
+    border: double 0.5px transparent;
     background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
     background-origin: border-box;
     background-clip: content-box, border-box;
     color: #c5b358;
   }
   .desktop-description {
-    background: radial-gradient(circle, #1e3b71 0%, hsl(218deg, 58%, 38%) 50%, rgb(30, 59, 112) 100%);
+    background-color: #000000;
     border-radius: 25px;
   }
   .desktop-description .desk-egg {
     border-radius: 25px;
-    border: double 5px transparent;
+    border: double 2px transparent;
     background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
     background-origin: border-box;
     background-clip: content-box, border-box;
     width: 30vw;
     height: 18.5414091471vw;
     transform: translateX(117%);
+  }
+  .desktop-description h3 {
+    font-size: 2rem;
   }
   .desktop-description p {
     color: #FFFFFF;
@@ -908,19 +919,48 @@ hr {
     filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
   }
   .contact {
-    margin: 0 auto;
-    border-radius: 25px;
-    background: radial-gradient(circle, rgb(174, 195, 233) 0%, rgb(206, 219, 242) 50%, rgb(174, 195, 233) 100%);
+    margin-top: 5px;
   }
   .contact h2 {
     width: 100vw;
     height: 3rem;
     margin: 0 auto;
   }
+  .contact button {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 1920px) {
+  .desk-header {
+    background-size: cover;
+    height: 80vh;
+  }
+  .home {
+    width: 20vw;
+    height: 12.3609394314vw;
+    transform: translateX(25%);
+  }
   h1 .T {
     bottom: -3%;
+  }
+  .about {
+    max-height: 60vh;
+  }
+  .about .spacing {
+    grid-template-columns: 0.5fr 2fr 1fr;
+    gap: 2rem;
+  }
+  .about .carousel-off img {
+    height: 420px;
+    width: 337px;
+  }
+  .tech, .tech-text {
+    width: 20vw;
+    height: 12.3609394314vw;
+    transform: translate(360%, -110%);
+  }
+  .projects {
+    min-height: 60vh;
   }
 }
 html {

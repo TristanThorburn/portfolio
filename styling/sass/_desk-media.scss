@@ -9,8 +9,9 @@
 
     .desk-header{
         margin:0;
-        background: $desk-dark-blue;
+        background-image:url('../../assets/unsplash-touann-gatouillat-vergos.webp');
         border-radius:25px;
+        background-size:cover;
         height:60vh;
         display:grid;
         grid-template-columns:repeat(4, 1fr);
@@ -21,12 +22,17 @@
             grid-column:span 2;
             font-size:3rem;
             margin-bottom:0;
+            margin-left:20px;
+            color:$white;
+            text-align: left;
         }
         h3{
             grid-row:4;
             grid-column:span 2;
             font-size:2rem;
             margin-top:0;
+            margin-left:20px;
+            text-align:left;
         }
     }
     .home{
@@ -53,22 +59,22 @@
     }
 
     .about{
-        background:$desk-light-blue;
-        border-radius:25px;
-        height:60vh;
+        margin:1% auto;
+        min-height:45vh;
 
-        div{
+        .spacing{
         display:grid;
-        grid-template-columns:1fr 3fr 2fr;
-        grid-template-rows:1fr 3fr;
+        grid-template-columns:1fr 2fr;
+        gap:2rem;
         }
-
+        .carousel-off{
+            grid-column:1;
+        }
         h2{
             grid-column:2;
         }
         p{
             grid-column:2;
-            grid-row:2;
         }
         .mobile-hidden{
             grid-column:1;
@@ -86,7 +92,7 @@
     .tech, .tech-text{
         width:30vw;
         height:$desktop-card;
-        transform:translate(233%, -100%);
+        transform:translate(217%, -105%);
 
         li{
             img{
@@ -106,11 +112,15 @@
         display:grid;
         grid-template-columns:repeat(3, 1fr);
         grid-template-rows:1fr 3fr;
-        gap:3rem;
-        margin:1px auto;
-        height:60vh;
-        background:$desk-dark-blue;
+        gap:1rem;
+        margin-top:2%;
+        background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.9)),
+            url('../../assets/817-bar.webp');
+        background-size:cover;
         border-radius:25px;
+        min-height:40vh;
         
         .project-card{
             width:30vw;
@@ -167,7 +177,7 @@
     }
 
     .desktop-description{
-        background:$desk-dark-blue;
+        background-color:$black;
         border-radius:25px;
 
         .desk-egg{
@@ -175,6 +185,9 @@
             width:30vw;
             height:$desktop-card;
             transform:translateX(117%);
+        }
+        h3{
+            font-size:2rem;
         }
         p{
             color:$white;
@@ -200,23 +213,63 @@
     }
 
     .contact{
-        margin:0 auto;
-        border-radius:25px;
-        background:$desk-light-blue;
+        margin-top:5px;
 
         h2{
             width:100vw;
             height:3rem;
             margin:0 auto;
         }
+
+        button{
+            margin-bottom:20px;
+        }
     }
 }
 
 @media (min-width:1920px){
 
+    .desk-header{
+        background-size:cover;
+        height:80vh;
+    }
+    .home{
+        width:20vw;
+        height:calc(20vw / 1.618);
+        transform:translateX(25%);
+    }
     h1{
         .T{
             bottom:-3%;
         }
     }
+
+    .about{
+        max-height:60vh;
+        
+        .spacing{
+            grid-template-columns:0.5fr 2fr 1fr;
+            gap:2rem;
+        }
+
+        .carousel-off{
+            
+            img{
+                height:420px;
+                width:337px;
+
+            }
+        }
+    }
+
+    .tech, .tech-text{
+        width:20vw;
+        height:calc(20vw / 1.618);
+        transform:translate(360%, -110%);
+    }
+
+    .projects{
+        min-height:60vh;
+    }
+
 }

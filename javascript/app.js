@@ -163,7 +163,7 @@ append.show = () => {
             }
             else if(window.innerWidth >=1200){
                 outPut.appendChild(clone);
-                setTimeout(() => {clone.classList.remove("description")}, "200");
+                clone.classList.remove("description");
             }           
         })
     })
