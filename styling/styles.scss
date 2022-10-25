@@ -10,4 +10,9 @@
 html{
     font-size:125%;
     overflow-x: hidden;
-}
+    scrollbar-width: none;
+    }
+    
+body::-webkit-scrollbar {
+        display: none;
+    }
