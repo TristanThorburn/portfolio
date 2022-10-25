@@ -1,3 +1,19 @@
+const cleanUp = {}
+
+cleanUp.schedule = () => {
+    outPut = document.querySelector(".desktop-description");
+    document.addEventListener("scroll", () => {
+        if(window.innerWidth < 1200 && outPut.childNodes.length > 0){
+            outPut.innerHTML = "";
+        }
+    });
+}
+
+cleanUp.init= () => {
+    cleanUp.schedule();
+}
+
+cleanUp.init();
 // Mobile Hamburger
 const hamburger = {};
 
@@ -97,18 +113,33 @@ const eggy = {};
 eggy.cracked = () => {
     eggy.secret = document.querySelector(".secret");
 
-    eggy.secret.addEventListener("dblclick", () => {
+    eggy.secret.addEventListener("dblclick", (e) => {
         const proj = document.querySelector(".eggy");
-        eggy.secret.classList.toggle("active");
-        proj.classList.toggle("active");
+        const clone = proj.cloneNode(true);
+        const outPut = document.querySelector(".desktop-description");
 
-        if(proj.classList.contains("active")){
-            proj.style.maxHeight = proj.scrollHeight + "px";
+        if(window.innerWidth < 1200){
+            eggy.secret.classList.toggle("active");
+            proj.classList.toggle("active");
+
+            if(proj.classList.contains("active")){
+                proj.style.maxHeight = proj.scrollHeight + "px";
+            }
+            else{
+                proj.style.maxHeight = 0;
+            }
+        }else if(outPut.childNodes.length > 0){
+            eggy.secret.classList.toggle("active");
+            outPut.innerHTML = "";
         }
         else{
-            proj.style.maxHeight = 0;
+            eggy.secret.classList.toggle("active");
+            outPut.appendChild(clone);
+            clone.removeAttribute("style");
+            clone.classList.toggle("slide");
+            clone.classList.remove("eggy");
         }
-    })
+    });
 }
 
 eggy.init = () => {
@@ -132,7 +163,7 @@ append.show = () => {
             }
             else if(window.innerWidth >=1200){
                 outPut.appendChild(clone);
-                clone.classList.remove("description");
+                setTimeout(() => {clone.classList.remove("description")}, "200");
             }           
         })
     })

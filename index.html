@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>💻Tristan Thorburn Portfolio</title>
+    <meta name="description" content="Web Developer Portfolio for Tristan Thorburn">
     <script src="https://kit.fontawesome.com/b1a14f8817.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -38,11 +39,11 @@
                 <ul>
                     <li class="mobile-hidden">
                         <a href="https://www.linkedin.com/in/tristanthorburn/">
-                            <i class="fa-brands fa-linkedin"></i></a>
+                            <i class="fa-brands fa-linkedin" alt="link to linked in profile"></i></a>
                     </li>
                     <li class="mobile-hidden">
                         <a href="https://github.com/TristanThorburn">
-                            <i class="fa-brands fa-github"></i></a>
+                            <i class="fa-brands fa-github" alt="link to github profile"></i></a>
                     </li>
                     <li class="mobile-hidden">
                         <a href="./assets/tristan-juno-resume.docx.pdf" alt="link to resume"><i class="fa-solid fa-file"></i></a>
@@ -54,6 +55,7 @@
                 </ul>
             </nav>
         </div>
+
         <div class="desk-header">
             <div id="home" class="home" tabindex="0">
                 <h1>
@@ -61,43 +63,30 @@
                     <span class="ristan"></span>
                 </h1>
             </div>
-            <h2 class="mobile-hidden">Front-End</h2>
-            <h3 class="mobile-hidden">Web Developer</h3>
+            <h2 class="carousel-off">Front-End</h2>
+            <h3 class="carousel-off">Web Developer</h3>
         </div>
     </header>
     <main>
-        <section class="wrapper about">
-            <h2 id="about">Thanks for checking out my Portfolio</h2>
-            <p>I am a front end developer who enjoys the challenge of translating the ideas and design of a project to a working and accessible site. I studied with Juno College in order to make the industry change from hospitality, where I worked for the last 12 years.</p>
-            <div class="mobile-hidden">
-                <div class="social-links">
-                    <p>
-                        <a href="https://www.linkedin.com/in/tristanthorburn/">
-                            <i class="fa-brands fa-linkedin"></i></a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/TristanThorburn">
-                            <i class="fa-brands fa-github"></i></a>
-                    </p>
-                    <p>
-                        <a href="./assets/tristan-juno-resume.docx.pdf" alt="link to resume"><i class="fa-solid fa-file"></i></a>
-                    </p>
-                </div>  
+        <section class="about">
+            <div class="wrapper">
+                <h2 id="about">Thanks for checking out my Portfolio</h2>
+                <p>I am a front end developer who enjoys the challenge of translating the ideas and design of a project to a working and accessible site. I studied with Juno College in order to make the industry change from hospitality, where I worked for the last 12 years.</p>
             </div>    
         </section>
         <section tabindex="0" class="tech-icons">
             <div class="tech">
                 <ul>
-                    <li><i class="fa-brands fa-html5"></i></li>
-                    <li><i class="fa-brands fa-css3-alt"></i></li>
-                    <li><i class="fa-brands fa-sass"></i></li>
-                    <li><i class="fa-brands fa-square-js"></i></li>
-                    <li><i class="fa-brands fa-react"></i></li>
-                    <li><img src="./assets/firebase-icon.svg"></li>
-                    <li><img src="./assets/accessibility-icon.svg"></li>
-                    <li><img src="./assets/rest-api-icon.svg"></li>
-                    <li><img src="./assets/responsive-icon.svg"></li>
-                    <li><img src="./assets/vscode-icon.svg"></li>
+                    <li><i class="fa-brands fa-html5" alt="html5 icon"></i></li>
+                    <li><i class="fa-brands fa-css3-alt" alt="css3 icon"></i></li>
+                    <li><i class="fa-brands fa-sass" alt="sass icon"></i></li>
+                    <li><i class="fa-brands fa-square-js" alt="javascript icon"></i></li>
+                    <li><i class="fa-brands fa-react" alt="react icon"></i></li>
+                    <li><img src="./assets/firebase-icon.svg" alt="firebase icon"></li>
+                    <li><img src="./assets/accessibility-icon.svg" alt="accessibility icon"></li>
+                    <li><img src="./assets/rest-api-icon.svg" alt="rest api icon"></li>
+                    <li><img src="./assets/responsive-icon.svg" alt="responsive web design icon"></li>
+                    <li><img src="./assets/vscode-icon.svg" alt="vs code icon"></li>
                 </ul>
             </div>
         </section>
@@ -119,124 +108,131 @@
         </section>
         <section id="projects" class="projects">
             <h2 class="collection" tabindex="0">Project Collection</h2>
-            <button class="carousel-off slide-left"><</button>
+
+            <button class="carousel-off slide-left">Previous</button>
+
             <div class="project-slider">
                 <div class="slide"><!--PROJECT 1-->
                     <div class = "project-container" tabindex="0">
                         <div class="project-card">
-                            <img src="./assets/js-sommelier.png" alt="Javascript Sommelier project image, click for details">
+                            <img src="./assets/js-sommelier.webp" alt="Javascript Sommelier project image, click for details">
                         </div>
                     </div>
                     <div class="wrapper description">
                         <div class="project-links">
                             <p><a href="https://darling-malasada-522ed5.netlify.app/">
-                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                                <i class="fa-solid fa-laptop" alt="live site icon"></i>Live</a></p>
                             <p><a href="https://github.com/Juno-group-proj-two/paul-matt-trist-proj-2">
-                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                                <i class="fa-solid fa-code" alt="code link icon "></i></i>Repo</a></p>
                         </div>
                         <h3>Javascript Sommelier</h3>
                         <p>Project Partners: 
                             <a href="https://github.com/myboyblue519">Mattew Van Luxemborg</a>&nbspand 
                             <a href="https://github.com/PPableo">Paul Pableo</a></p>
-                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <p>About: Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
                         <ul>
-                            <li><i class="fa-brands fa-html5"></i></li>
-                            <li><i class="fa-brands fa-css3-alt"></i></li>
-                            <li><i class="fa-brands fa-sass"></i></li>
-                            <li><i class="fa-brands fa-square-js"></i></li>
+                            <li><i class="fa-brands fa-html5" alt="html5 icon"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" alt="css3 icon"></i></li>
+                            <li><i class="fa-brands fa-sass" alt="sass icon"></i></li>
+                            <li><i class="fa-brands fa-square-js" alt="javascript icon"></i></li>
                         </ul>
-                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                        <p class="end-desc">Tech used / Difficulties / Solutions (Desktop)</p>
                     </div>
                 </div>
+
                 <div class="slide"><!--PROJECT 2-->
                     <div class = "project-container" tabindex="0">
                         <div class="project-card">
-                            <img src="./assets/under-the-sea.png" alt="Under the Sea project image, click for details">
+                            <img src="./assets/under-the-sea.webp" alt="Under the Sea project image, click for details">
                         </div>
                     </div>
                     <div class="wrapper description">
                         <div class="project-links">
                             <p><a href="https://zesty-moonbeam-ee59a1.netlify.app/">
-                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                                <i class="fa-solid fa-laptop" alt="live site icon"></i>Live</a></p>
                             <p><a href="https://github.com/TristanThorburn/project-one/tree/my-feature-branch">
-                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                                <i class="fa-solid fa-code" alt="code link icon"></i></i>Repo</a></p>
                         </div>
                         <h3>Under the sea</h3>
-                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <p>About: Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
                         <ul>
-                            <li><i class="fa-brands fa-html5"></i></li>
-                            <li><i class="fa-brands fa-css3-alt"></i></li>
-                            <li><i class="fa-brands fa-sass"></i></li>
-                            <li><i class="fa-brands fa-square-js"></i></li>
-                            <li><img src="./assets/accessibility-icon.svg"></li>
-                            <li><img src="./assets/responsive-icon.svg"></li>
+                            <li><i class="fa-brands fa-html5" alt="html5 icon"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" alt="css3 icon"></i></li>
+                            <li><i class="fa-brands fa-sass" alt="sass icon"></i></li>
+                            <li><i class="fa-brands fa-square-js" alt="javascript icon"></i></li>
+                            <li><img src="./assets/accessibility-icon.svg" alt="accessibility icon"></li>
+                            <li><img src="./assets/responsive-icon.svg" alt="responsive design icon"></li>
                         </ul>
-                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                        <p class="end-desc">Tech used / Difficulties / Solutions (Desktop)</p>
                     </div>
                 </div>
+
                 <div class="slide"><!--PROJECT 3-->
                     <div class = "project-container" tabindex="0">
                         <div class="project-card">
-                            <img src="./assets/one-magazine.png" alt="One Magazine project image, click for details">
+                            <img src="./assets/one-magazine.webp" alt="One Magazine project image, click for details">
                         </div>
                     </div>
                     <div class="wrapper description">
                         <div class="project-links">
                             <p><a href="https://tubular-boba-56667e.netlify.app/">
-                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                                <i class="fa-solid fa-laptop" alt="live site icon"></i>Live</a></p>
                             <p><a href="https://github.com/TristanThorburn/tristan-week-one-assignment-one">
-                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                                <i class="fa-solid fa-code" alt="code link icon"></i></i>Repo</a></p>
                         </div>
                         <h3>One Magazine</h3>
-                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <p>About: Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
                         <ul>
-                            <li><i class="fa-brands fa-html5"></i></li>
-                            <li><i class="fa-brands fa-css3-alt"></i></li>
-                            <li><img src="./assets/vscode-icon.svg"></li>
+                            <li><i class="fa-brands fa-html5" alt="html5 icon"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" alt="css3 icon"></i></li>
+                            <li><img src="./assets/vscode-icon.svg" alt="vs code icon"></li>
                         </ul>
-                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                        <p class="end-desc">Tech used / Difficulties / Solutions (Desktop)</p>
                     </div>
                 </div>
+
                 <div class="slide"><!--PROJECT 4-->
                     <div class = "project-container" tabindex="0">
                         <div class="project-card">
-                            <img src="./assets/spaces.png" alt="Spaces project image, click for details">
+                            <img src="./assets/spaces.webp" alt="Spaces project image, click for details">
                         </div>
                     </div>
                     <div class="wrapper description">
                         <div class="project-links">
                             <p><a href="https://joyful-entremet-75e854.netlify.app/">
-                                <i class="fa-solid fa-laptop"></i>Live</a></p>
+                                <i class="fa-solid fa-laptop" alt="live site icon"></i>Live</a></p>
                             <p><a href="https://github.com/TristanThorburn/TristanThorburn-web-dev-final-project">
-                                <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                                <i class="fa-solid fa-code" alt="code link icon"></i></i>Repo</a></p>
                         </div>
                         <h3>Spaces</h3>
-                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <p>About: Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
                         <ul>
-                            <li><i class="fa-brands fa-html5"></i></li>
-                            <li><i class="fa-brands fa-css3-alt"></i></li>
-                            <li><img src="./assets/vscode-icon.svg"></li>
+                            <li><i class="fa-brands fa-html5" alt="html5 icon"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" alt="css3 icon"></i></li>
+                            <li><img src="./assets/vscode-icon.svg" alt="vs code icon"></li>
                         </ul>
-                        <p>Tech used / Difficulties / Solutions (Desktop)</p>
+                        <p class="end-desc">Tech used / Difficulties / Solutions (Desktop)</p>
                     </div>
                 </div>
-                <div class="eggy slide"">
-                    <div tabindex="0">
-                        <img src="./assets/easter-egg-project.png" alt="3 Day old developer project image, click for details">
+
+                <div class="eggy slide">
+                    <div class="desk-egg">
+                        <img src="./assets/easter-egg-project.webp" alt="3 Day old developer project image, click for details">
                     </div>
                     <div class="wrapper">
                         <div class="project-links">
                             <p><a href="https://fabulous-sunflower-130abe.netlify.app/">
-                                    <i class="fa-solid fa-laptop"></i>Live</a></p>
+                                    <i class="fa-solid fa-laptop" alt="live site icon"></i>Live</a></p>
                             <p><a href="https://github.com/TristanThorburn/3-days-of-intro-to-web-dev">
-                                    <i class="fa-solid fa-code"></i></i>Repo</a></p>
+                                    <i class="fa-solid fa-code" alt="code link icon"></i></i>Repo</a></p>
                         </div>
-                        <h3>After 3 days of web dev classes</h3>
-                        <p>Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs Chabs</p>
+                        <h3>3 days later</h3>
+                        <p class="end-desc">Wait a minute, how did you find this! I only knew 3 days of HTML and CSS, this shouldn't be here at all!</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-off slide-right">></button>
+
+            <button class="carousel-off slide-right">Next</button>
         </section>
         <section class="desktop-description">
             
@@ -276,27 +272,27 @@
                         placeholder="Message"
                         class="input-message">
                 </div>
-                <button type="submit">Send</button>
-            </form>
-            <div class="mobile-hidden">
-                <div class="social-links">
-                    <p>
-                        <a href="https://www.linkedin.com/in/tristanthorburn/">
-                            <i class="fa-brands fa-linkedin"></i></a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/TristanThorburn">
-                            <i class="fa-brands fa-github"></i></a>
-                    </p>
-                    <p>
-                        <a href="./assets/tristan-juno-resume.docx.pdf" alt="link to resume"><i class="fa-solid fa-file"></i></a>
-                    </p>
-                </div>  
-            </div> 
+                <button type="submit">Send Message</button>
+            </form> 
         </section>
     </main>
     <footer>
         <hr>
+        <div class="mobile-hidden">
+            <div class="social-links">
+                <p>
+                    <a href="https://www.linkedin.com/in/tristanthorburn/">
+                        <i class="fa-brands fa-linkedin" alt="linkedin icon"></i></a>
+                </p>
+                <p>
+                    <a href="https://github.com/TristanThorburn">
+                        <i class="fa-brands fa-github" alt="github icon"></i></a>
+                </p>
+                <p>
+                    <a href="./assets/tristan-juno-resume.docx.pdf" alt="link to resume"><i class="fa-solid fa-file"></i></a>
+                </p>
+            </div>  
+        </div>
         <p>Tristan Thorburn</p>
         <p class="secret">T</p>
         <script src="./javascript/app.js"></script>

@@ -398,6 +398,9 @@ h1 .ristan {
 .about h2 {
   color: #000000;
 }
+.about p {
+  line-height: 1.25;
+}
 
 .social-links {
   display: grid;
@@ -703,13 +706,6 @@ hr {
   h1 .T {
     bottom: -3.5%;
   }
-  .social-links {
-    background-color: #FFFFFF;
-  }
-  .social-links .fa-github {
-    background-color: #000000;
-    border: 2px solid #000000;
-  }
 }
 @media (min-width: 1200px) {
   .desk-hidden {
@@ -717,10 +713,9 @@ hr {
   }
   .desk-header {
     margin: 0;
-    background: rgb(30, 59, 112);
     background: radial-gradient(circle, rgb(30, 59, 112) 0%, rgb(41, 83, 155) 50%, rgb(30, 59, 112) 100%);
     border-radius: 25px;
-    height: 50vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -758,6 +753,11 @@ hr {
     left: 20px;
   }
   .about {
+    background: radial-gradient(circle, rgb(174, 195, 233) 0%, rgb(206, 219, 242) 50%, rgb(174, 195, 233) 100%);
+    border-radius: 25px;
+    height: 60vh;
+  }
+  .about div {
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: 1fr 3fr;
@@ -785,7 +785,7 @@ hr {
   .tech, .tech-text {
     width: 30vw;
     height: 18.5414091471vw;
-    transform: translate(217%, -100%);
+    transform: translate(233%, -100%);
   }
   .tech li img, .tech-text li img {
     width: 2rem;
@@ -800,19 +800,25 @@ hr {
   .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
     gap: 3rem;
-    margin: 5% auto;
+    margin: 1px auto;
+    height: 60vh;
+    background: radial-gradient(circle, rgb(30, 59, 112) 0%, rgb(41, 83, 155) 50%, rgb(30, 59, 112) 100%);
+    border-radius: 25px;
   }
-  .projects h2, .projects .project-card {
+  .projects .project-card {
     width: 30vw;
     height: 18.5414091471vw;
     margin: auto auto;
   }
   .projects h2 {
+    width: 100vw;
+    height: 3rem;
     font-size: 2rem;
-    grid-column: 2;
-    margin-top: 0;
+    grid-column: 1;
+    grid-column: span 3;
+    margin-top: 0%;
   }
   .project-slider {
     grid-row: 2;
@@ -827,20 +833,90 @@ hr {
     display: block;
   }
   .slide-left {
+    border-radius: 25px;
+    border: double 1px transparent;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     grid-column: 1;
     grid-row: 2;
+    width: 40%;
+    height: 24.7218788628%;
+    transform: translate(150%, 100%);
+  }
+  .slide-left:hover, .slide-left :focus {
+    border-radius: 25px;
+    border: double 1px transparent;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    color: #c5b358;
   }
   .slide-right {
+    border-radius: 25px;
+    border: double 1px transparent;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     grid-column: 3;
     grid-row: 2;
+    width: 40%;
+    height: 24.7218788628%;
+    transform: translateY(100%);
+  }
+  .slide-right:hover, .slide-right :focus {
+    border-radius: 25px;
+    border: double 1px transparent;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    color: #c5b358;
+  }
+  .desktop-description {
+    background: radial-gradient(circle, rgb(30, 59, 112) 0%, rgb(41, 83, 155) 50%, rgb(30, 59, 112) 100%);
+    border-radius: 25px;
+  }
+  .desktop-description .desk-egg {
+    border-radius: 25px;
+    border: double 5px transparent;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(to top, #686868, #c0bfc3, #686868);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 30vw;
+    height: 18.5414091471vw;
+    transform: translateX(117%);
+  }
+  .desktop-description p {
+    color: #C0C0C0;
+  }
+  .desktop-description .end-desc {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .desktop-description a {
+    color: #c5b358;
+  }
+  .desktop-description ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .desktop-description ul img {
+    filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
+  }
+  .desktop-description i {
+    filter: invert(67%) sepia(71%) saturate(280%) hue-rotate(13deg) brightness(91%) contrast(94%);
   }
   .contact {
     margin-top: 0;
+    border-radius: 25px;
+    background: radial-gradient(circle, rgb(174, 195, 233) 0%, rgb(206, 219, 242) 50%, rgb(174, 195, 233) 100%);
   }
   .contact h2 {
-    width: 30vw;
-    height: 18.5414091471vw;
-    transform: translateX(118%);
+    width: 100vw;
+    height: 3rem;
+    margin-top: 0;
   }
 }
 html {
