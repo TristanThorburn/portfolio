@@ -81,12 +81,14 @@ h2.collection{
 
 .project-card{
     @include silver-border;
+    border:double 5px transparent;
     height:$business-card;
     margin-bottom:20px;
     position:relative;
 
     &:hover, :focus{
         @include gold-border;
+        border:double 5px transparent;
         cursor: pointer;
     }
 }
