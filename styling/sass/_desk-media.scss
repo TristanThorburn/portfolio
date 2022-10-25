@@ -177,7 +177,7 @@
             transform:translateX(117%);
         }
         p{
-            color:$silver;
+            color:$white;
         }
         .end-desc{
             margin-bottom:0;
@@ -200,25 +200,23 @@
     }
 
     .contact{
-        margin-top:0;
+        margin:0 auto;
         border-radius:25px;
         background:$desk-light-blue;
 
         h2{
             width:100vw;
             height:3rem;
-            margin-top:0;
+            margin:0 auto;
         }
     }
+}
 
+@media (min-width:1920px){
 
-
-
-
-
-
-
-
-
-    
+    h1{
+        .T{
+            bottom:-3%;
+        }
+    }
 }
