@@ -1,4 +1,4 @@
-const cleanUp = {}
+const cleanUp = {};
 
 cleanUp.schedule = () => {
     outPut = document.querySelector(".desktop-description");
@@ -179,7 +179,7 @@ append.init();
 const contact = {};
 
 contact.accordion = () => {
-    contact.container = document.querySelector(".contact");
+    contact.container = document.getElementById("contact");
 
     contact.container.addEventListener("click", () => {
         contact.h2 = document.getElementById("contact");
